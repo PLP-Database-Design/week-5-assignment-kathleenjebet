@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr {
+            margin-bottom: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Speciality</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <% results.forEach(row=> { %>
+                <tr>
+                    <td>
+                        <%= row.provider_specialty %>
+                    </td>
+                    
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+</body>
+
+</html>
